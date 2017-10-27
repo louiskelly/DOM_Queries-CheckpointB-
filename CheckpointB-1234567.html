@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Template</title>
+</head>
+<body>
+
+	<ul>
+		<li id="lemon1" class="lemon">LEMON 1</li>
+		<li id="lemon2" class="lemon">LEMON 2</li>
+		<li id="lemon3" class="lemon">LEMON 3</li>
+		<li id="lemon4" class="lemon">LEMON 4</li>
+		<li id="lemon5" class="lemon">LEMON 5</li>
+	</ul>
+
+<script>
+		
+		(function(){
+
+			//List of variables linking to Id's
+			var lemon1 = document.getElementById('lemon1');
+			var lemon2 = document.getElementById('lemon2');
+			var lemon3 = document.getElementById('lemon3');
+			var lemon4 = document.getElementById('lemon4');
+			var lemon5 = document.getElementById('lemon5');
+
+			function colorChange(id, varcolor){
+				document.getElementById(id).style.color = varcolor;
+			}
+			//Change text color
+			colorChange('lemon1' , 'red');
+			colorChange('lemon2' , 'blue');
+			colorChange('lemon3' , 'green');
+			colorChange('lemon4' , 'purple');
+			colorChange('lemon5' , 'orange');
+
+			function sizeChange(id, varsize){
+				document.getElementById(id).style.fontSize = varsize;
+			}
+			//Change text size
+			sizeChange('lemon1' , '50px');
+			sizeChange('lemon2' , '100px');
+			sizeChange('lemon3' , '20px');
+			sizeChange('lemon4' , '40px');
+			sizeChange('lemon5' , '70px');
+
+			function backgroundChange(id, varbackground){
+				document.getElementById(id).style.backgroundColor = varbackground;
+			}
+			//Change text background color
+			backgroundChange('lemon1' , 'blue');
+			backgroundChange('lemon2' , 'grey');
+			backgroundChange('lemon3' , 'black');
+			backgroundChange('lemon4' , 'orange');
+			backgroundChange('lemon5' , 'green');
+
+		})();
+
+</script>
+
+</body>
+</html>
